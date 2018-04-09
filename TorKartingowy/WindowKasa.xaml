@@ -1,0 +1,14 @@
+﻿<Window x:Class="TorKartingowy.WindowKasa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TorKartingowy"
+        mc:Ignorable="d"
+        Title="WindowKasa" Height="332" Width="300">
+    <Grid Width="290" HorizontalAlignment="Left">
+        <Button x:Name="buttonWydaj" Content="Wydaj bilet" Click="button_Wydaj" Margin="0,0,-2,201" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="292"/>
+        <Button x:Name="buttonKasuj" Content="Skasuj Bilet" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="292" Click="button_Kasuj" Margin="0,100,-2,0"/>
+        <Button x:Name="buttonRezerwacja" Content="Rezerwacja" HorizontalAlignment="Left" Height="100" VerticalAlignment="Bottom" Width="292" Click="button_Kasuj" Margin="0,0,-2,1"/>
+    </Grid>
+</Window>

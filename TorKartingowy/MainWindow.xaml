@@ -1,0 +1,29 @@
+﻿<Window x:Class="TorKartingowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TorKartingowy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="534" Width="500">
+    <Grid Margin="0,0,0,111">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="358*"/>
+            <RowDefinition Height="201*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="buttonZarzadzanie" Content="Zarządzanie&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246" Height="125" Click="button_Zarzadzanie"/>
+        <Button x:Name="buttonTerminarz" Content="Terminarz&#xD;&#xA;" Margin="246,0,0,0" VerticalAlignment="Top" Height="125" Click="button_Terminarz" Width="246"/>
+        <Button x:Name="buttonKasa" Content="KASA&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,125,0,0" VerticalAlignment="Top" Width="246" Height="125" Click="button_Kasa"/>
+        <Button x:Name="buttonLigi" Content="LIGI" HorizontalAlignment="Left" Margin="246,125,0,0" VerticalAlignment="Top" Width="246" Height="125" Click="button1_Ligi"/>
+        <Button x:Name="buttonBaza" Content="BAZA KLIENTÓW" HorizontalAlignment="Left" Margin="0,250,0,0" VerticalAlignment="Top" Width="246" Height="125" Click="button2_Baza" Grid.RowSpan="2"/>
+        <Button x:Name="buttonArchiwum" Content="REKORDY I ARCHIWUM&#xD;&#xA;" HorizontalAlignment="Left" Margin="246,250,0,0" VerticalAlignment="Top" Width="246" Height="125" Click="button3_Archiwum" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="0,163,0,-61" TextWrapping="Wrap" Text="Dzisiejszy layout:" VerticalAlignment="Top" Height="39" Width="246" FontSize="24" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="39" Margin="246,163,0,-61" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="246" FontSize="24" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="0,124,0,-22" TextWrapping="Wrap" Text="Na torze:" VerticalAlignment="Top" Height="39" Width="246" FontSize="24" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Height="39" Margin="246,124,0,-22" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="246" FontSize="24" Grid.Row="1"/>
+
+    </Grid>
+</Window>
