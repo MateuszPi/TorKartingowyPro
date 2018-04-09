@@ -9,6 +9,6 @@
     <Grid Width="290" HorizontalAlignment="Left">
         <Button x:Name="buttonWydaj" Content="Wydaj bilet" Click="button_Wydaj" Margin="0,0,-2,201" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="292"/>
         <Button x:Name="buttonKasuj" Content="Skasuj Bilet" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="292" Click="button_Kasuj" Margin="0,100,-2,0"/>
-        <Button x:Name="buttonRezerwacja" Content="Rezerwacja" HorizontalAlignment="Left" Height="100" VerticalAlignment="Bottom" Width="292" Click="button_Kasuj" Margin="0,0,-2,1"/>
+        <Button x:Name="buttonRezerwacja" Content="Rezerwacja" HorizontalAlignment="Left" Height="100" VerticalAlignment="Bottom" Width="292" Click="button_Rezerwacja" Margin="0,0,-2,1"/>
     </Grid>
 </Window>

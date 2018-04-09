@@ -35,5 +35,11 @@ namespace TorKartingowy
             WindowKasuj window = new WindowKasuj();
             window.Show();
         }
+
+        private void button_Rezerwacja(object sender, RoutedEventArgs e)
+        {
+            WindowRezerwacja window = new WindowRezerwacja();
+            window.Show();
+        }
     }
 }

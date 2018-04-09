@@ -61,8 +61,14 @@
     <Compile Include="WindowKasuj.xaml.cs">
       <DependentUpon>WindowKasuj.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowRezerwacja.xaml.cs">
+      <DependentUpon>WindowRezerwacja.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowWydaj.xaml.cs">
       <DependentUpon>WindowWydaj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowZarzadzanie.xaml.cs">
+      <DependentUpon>WindowZarzadzanie.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -84,7 +90,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowRezerwacja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowWydaj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowZarzadzanie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

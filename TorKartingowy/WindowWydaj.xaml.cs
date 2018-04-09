@@ -33,9 +33,9 @@ namespace TorKartingowy
         private void Button_WydajBilet(object sender, RoutedEventArgs e)
         {
             string messageBoxText = "";
-            if (NumerNazwyKierowcy.Text != "")
+            if (NumerKartyKierowcy.Text != "")
             {
-                messageBoxText += $"Numer KartyKierowcy: {NumerNazwyKierowcy}\r\n";
+                messageBoxText += $"Numer KartyKierowcy: {NumerKartyKierowcy}\r\n";
             }
             messageBoxText += $"Typ biletu: {TypBiletu.Text}\r\nTyp Kartu {TypKartu.Text}\r\nOpłacony czas: {Czas.Text}\r\nCzy Wydać bilet";
             string caption = "Wydawanie biletu";

@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="WindowWydaj" Height="247.9" Width="300">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="0,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Numer Karty "/><Run Text="K"/><Run Text="ierowcy"/><LineBreak/><Run/></TextBlock>
-        <TextBox Name ="NumerNazwyKierowcy" HorizontalAlignment="Left" Height="17" Margin="125,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Numer Karty "/><Run Text="K"/><Run Text="ierowcy"/><LineBreak/><InlineUIContainer>
+                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+            </InlineUIContainer></TextBlock>
+        <TextBox Name ="NumerKartyKierowcy" HorizontalAlignment="Left" Height="17" Margin="125,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" TextChanged="TextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Typ biletu"/><LineBreak/><Run/></TextBlock>
         <ComboBox Name ="TypBiletu" HorizontalAlignment="Left" Height="17" Margin="125,78,0,0" VerticalAlignment="Top" Width="157"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Typ kartu"/><LineBreak/><Run/></TextBlock>

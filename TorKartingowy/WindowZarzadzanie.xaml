@@ -1,0 +1,23 @@
+﻿<Window x:Class="TorKartingowy.WindowZarzadzanie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TorKartingowy"
+        mc:Ignorable="d"
+        Title="WindowZarzadzanie" Height="274.074" Width="300">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center"><Run Text="ZARZĄDZANIE"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Dzisiejszy layout"/><LineBreak/><Run/></TextBlock>
+        <ComboBox HorizontalAlignment="Left" Margin="142,50,0,0" VerticalAlignment="Top" Width="150" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142" Text="Cena za przejazd(N)"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142" Text="Cena za przejazd(U)"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Cena Rezerwacji/h"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Cena Rezerwacji/k"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Cena za przejazd(N)"/><Run Text="[P]"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Cena za przejazd(U)"/><Run Text="[P]"/></TextBlock>
+        <Button x:Name="buttonKasa" Content="Potwierdź zmiany" HorizontalAlignment="Left" Margin="0,190,0,0" VerticalAlignment="Top" Width="142" Height="53" Click="button_Kasa"/>
+        <Button x:Name="buttonKasa_Copy" Content="Przywróć" HorizontalAlignment="Left" Margin="142,190,0,0" VerticalAlignment="Top" Width="150" Height="53" Click="button_Kasa"/>
+
+    </Grid>
+</Window>
