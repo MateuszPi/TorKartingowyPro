@@ -55,14 +55,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PageKlasyfikacjaMain.xaml.cs">
+      <DependentUpon>PageKlasyfikacjaMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageKlasyfikacjaSzczegolowa.xaml.cs">
+      <DependentUpon>PageKlasyfikacjaSzczegolowa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagePunktacja.xaml.cs">
+      <DependentUpon>PagePunktacja.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowKasa.xaml.cs">
       <DependentUpon>WindowKasa.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowKasuj.xaml.cs">
       <DependentUpon>WindowKasuj.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowLigi.xaml.cs">
+      <DependentUpon>WindowLigi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowRezerwacja.xaml.cs">
       <DependentUpon>WindowRezerwacja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowTerminarz.xaml.cs">
+      <DependentUpon>WindowTerminarz.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowWydaj.xaml.cs">
       <DependentUpon>WindowWydaj.xaml</DependentUpon>
@@ -82,6 +97,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageKlasyfikacjaMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageKlasyfikacjaSzczegolowa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagePunktacja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowKasa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,7 +117,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowLigi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowRezerwacja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowTerminarz.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -33,7 +33,7 @@ namespace TorKartingowy
 
         private void button1_Ligi(object sender, RoutedEventArgs e)
         {
-            WindowKasa window = new WindowKasa();
+            WindowLigi window = new WindowLigi();
             window.Show();
         }
 
@@ -56,7 +56,7 @@ namespace TorKartingowy
         }
         private void button_Terminarz(object sender, RoutedEventArgs e)
         {
-            WindowKasa window = new WindowKasa();
+            WindowTerminarz window = new WindowTerminarz();
             window.Show();
         }
     }

@@ -1,0 +1,20 @@
+﻿<Window x:Class="TorKartingowy.WindowLigi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TorKartingowy"
+        mc:Ignorable="d"
+        Title="WindowLigi" Height="397" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="51" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" FontSize="36" TextAlignment="Center" Text="Ligi"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="168" FontSize="24" Text="Klasa"/>
+        <ComboBox x:Name ="TypKartu" HorizontalAlignment="Left" Height="31" Margin="190,56,0,0" VerticalAlignment="Top" Width="202"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="168" FontSize="24"><Run Text="Sezon"/><LineBreak/><Run/></TextBlock>
+        <ComboBox x:Name ="TypKartu_Copy" HorizontalAlignment="Left" Height="31" Margin="190,87,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button Name="Klasyfikacja" Content="Klasyfikacja" HorizontalAlignment="Left" Height="45" Margin="0,118,0,0" VerticalAlignment="Top" Width="190" Click="Button_KlasyfikacjaMain"/>
+        <Button Name="Terminarz" Content="Terminarz" HorizontalAlignment="Left" Height="45" Margin="190,118,0,0" VerticalAlignment="Top" Width="202" Click="Button_Terminarz"/>
+        <Frame Name="FrameLiga" HorizontalAlignment="Left" Height="203" Margin="1,163,0,0" VerticalAlignment="Top" Width="391" NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Window>

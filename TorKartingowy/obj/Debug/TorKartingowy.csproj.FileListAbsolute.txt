@@ -21,3 +21,15 @@ G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.ex
 G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.pdb
 G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowRezerwacja.g.cs
 G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowRezerwacja.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowZarzadzanie.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowZarzadzanie.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowTerminarz.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowTerminarz.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaMain.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowLigi.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaMain.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowLigi.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PagePunktacja.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PagePunktacja.baml

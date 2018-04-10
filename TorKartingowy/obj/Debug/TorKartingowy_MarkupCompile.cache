@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\App.xaml
-5-58542375
+11-176146190
 
-9-1201215274
+15-160539143
 13738642453
-MainWindow.xaml;WindowKasa.xaml;WindowKasuj.xaml;WindowRezerwacja.xaml;WindowWydaj.xaml;
+MainWindow.xaml;PageKlasyfikacjaMain.xaml;PageKlasyfikacjaSzczegolowa.xaml;PagePunktacja.xaml;WindowKasa.xaml;WindowKasuj.xaml;WindowLigi.xaml;WindowRezerwacja.xaml;WindowTerminarz.xaml;WindowWydaj.xaml;WindowZarzadzanie.xaml;
 
 False
 
