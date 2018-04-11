@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PageArchiwum.xaml.cs">
+      <DependentUpon>PageArchiwum.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageKlasyfikacjaMain.xaml.cs">
       <DependentUpon>PageKlasyfikacjaMain.xaml</DependentUpon>
     </Compile>
@@ -64,17 +67,32 @@
     <Compile Include="PagePunktacja.xaml.cs">
       <DependentUpon>PagePunktacja.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageRekordy.xaml.cs">
+      <DependentUpon>PageRekordy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowArchiwum.xaml.cs">
+      <DependentUpon>WindowArchiwum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowBaza.xaml.cs">
+      <DependentUpon>WindowBaza.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowKasa.xaml.cs">
       <DependentUpon>WindowKasa.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowKasuj.xaml.cs">
       <DependentUpon>WindowKasuj.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowKierowca.xaml.cs">
+      <DependentUpon>WindowKierowca.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowLigi.xaml.cs">
       <DependentUpon>WindowLigi.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowRezerwacja.xaml.cs">
       <DependentUpon>WindowRezerwacja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowSzczegóły.xaml.cs">
+      <DependentUpon>WindowSzczegóły.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowTerminarz.xaml.cs">
       <DependentUpon>WindowTerminarz.xaml</DependentUpon>
@@ -97,6 +115,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageArchiwum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageKlasyfikacjaMain.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,6 +131,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageRekordy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowArchiwum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowBaza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowKasa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,11 +151,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowKierowca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowLigi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowRezerwacja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowSzczegóły.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

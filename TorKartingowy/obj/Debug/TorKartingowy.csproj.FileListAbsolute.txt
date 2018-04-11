@@ -33,3 +33,15 @@ G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacja
 G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.baml
 G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PagePunktacja.g.cs
 G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PagePunktacja.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowBaza.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowBaza.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowKierowca.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowSzczegóły.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowKierowca.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowSzczegóły.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageRekordy.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowArchiwum.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageRekordy.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowArchiwum.baml
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageArchiwum.g.cs
+G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageArchiwum.baml

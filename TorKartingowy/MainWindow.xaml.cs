@@ -37,21 +37,21 @@ namespace TorKartingowy
             window.Show();
         }
 
-        private void button2_Baza(object sender, RoutedEventArgs e)
+        private void button_Baza(object sender, RoutedEventArgs e)
         {
-            WindowKasa window = new WindowKasa();
+            WindowBaza window = new WindowBaza();
             window.Show();
         }
 
-        private void button3_Archiwum(object sender, RoutedEventArgs e)
+        private void button_Archiwum(object sender, RoutedEventArgs e)
         {
-            WindowKasa window = new WindowKasa();
+            WindowArchiwum window = new WindowArchiwum();
             window.Show();
         }
 
         private void button_Zarzadzanie(object sender, RoutedEventArgs e)
         {
-            WindowKasa window = new WindowKasa();
+            WindowZarzadzanie window = new WindowZarzadzanie();
             window.Show();
         }
         private void button_Terminarz(object sender, RoutedEventArgs e)

@@ -14,7 +14,7 @@
         <ComboBox x:Name ="TypKartu_Copy" HorizontalAlignment="Left" Height="31" Margin="190,87,0,0" VerticalAlignment="Top" Width="202"/>
         <Button Name="Klasyfikacja" Content="Klasyfikacja" HorizontalAlignment="Left" Height="45" Margin="0,118,0,0" VerticalAlignment="Top" Width="190" Click="Button_KlasyfikacjaMain"/>
         <Button Name="Terminarz" Content="Terminarz" HorizontalAlignment="Left" Height="45" Margin="190,118,0,0" VerticalAlignment="Top" Width="202" Click="Button_Terminarz"/>
-        <Frame Name="FrameLiga" HorizontalAlignment="Left" Height="203" Margin="1,163,0,0" VerticalAlignment="Top" Width="391" NavigationUIVisibility="Hidden"/>
+        <Frame Name="FrameLiga" HorizontalAlignment="Left" Height="203" Margin="1,163,0,0" VerticalAlignment="Top" Width="391" NavigationUIVisibility="Hidden" Navigated="FrameLiga_Navigated"/>
 
     </Grid>
 </Window>

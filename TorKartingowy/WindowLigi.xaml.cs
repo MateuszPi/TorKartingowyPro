@@ -31,7 +31,12 @@ namespace TorKartingowy
 
         private void Button_Terminarz(object sender, RoutedEventArgs e)
         {
-            FrameLiga.Content = new PageKlasyfikacjaSzczegolowa();
+            FrameLiga.Content = new PagePunktacja();
+        }
+
+        private void FrameLiga_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
         }
     }
 }
