@@ -39,5 +39,10 @@ namespace TorKartingowy
         {
             dbInput.ZmianyZarzadzanie("10", "10", "10", "10", "10", "10", 3);
         }
+
+        private void CenaZaPrzejazdN_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

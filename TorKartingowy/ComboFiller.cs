@@ -17,7 +17,7 @@ namespace TorKartingowy
 
         private void connectToDatabase()
         {
-            con = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            con = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             try
             {
                 con.Open();
@@ -30,7 +30,7 @@ namespace TorKartingowy
 
         public void DajTypyKartow(ComboBox TypKartow)
         {
-            SqlConnection con1 = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             //connectToDatabase();
             SqlCommand cmd = new SqlCommand("SELECT * FROM KartType", con1);
             SqlDataAdapter dA = new SqlDataAdapter(cmd);
@@ -44,7 +44,7 @@ namespace TorKartingowy
 
         public void DajTypBiletu(ComboBox TypBiletu)
         {
-            SqlConnection con1 = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             SqlCommand cmd = new SqlCommand("SELECT * FROM PriceList", con1);
             SqlDataAdapter dA = new SqlDataAdapter(cmd);
             DataSet dT = new DataSet();
@@ -52,12 +52,12 @@ namespace TorKartingowy
             dA.Fill(dT);
             TypBiletu.ItemsSource = dT.Tables[0].DefaultView;
             TypBiletu.DisplayMemberPath = dT.Tables[0].Columns["PriceName"].ToString();
-            TypBiletu.SelectedValuePath = dT.Tables[0].Columns["ID_Price"].ToString();
+            TypBiletu.SelectedValuePath = dT.Tables[0].Columns["Price"].ToString();
         }
 
         public void DajKart(ComboBox Kart, int IdKartType)
         {
-            SqlConnection con1 = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             SqlCommand cmd = new SqlCommand($"SELECT * FROM Kart WHERE ID_KartType = {IdKartType}", con1);
             SqlDataAdapter dA = new SqlDataAdapter(cmd);
             DataSet dT = new DataSet();
@@ -70,7 +70,7 @@ namespace TorKartingowy
 
         public void DajLayout(ComboBox Kart, int IdKartType)
         {
-            SqlConnection con1 = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             SqlCommand cmd = new SqlCommand($"SELECT * FROM Layout WHERE ID_KartType = {IdKartType}", con1);
             SqlDataAdapter dA = new SqlDataAdapter(cmd);
             DataSet dT = new DataSet();

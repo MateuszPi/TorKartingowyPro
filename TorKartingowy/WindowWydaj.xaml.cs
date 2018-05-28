@@ -1,5 +1,9 @@
-﻿using System;
+﻿using PdfSharp.Drawing;
+using PdfSharp.Drawing.Layout;
+using PdfSharp.Pdf;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +25,7 @@ namespace TorKartingowy
     public partial class WindowWydaj : Window
     {
         ComboFiller filler = new ComboFiller();
+        DatabaseInput dbIn = new DatabaseInput();
         string typKartu;
         string typBiletu;
         string kart;
@@ -40,8 +45,10 @@ namespace TorKartingowy
             if (Czas.Text != "")
             {
                 string czas = Czas.Text;
+                string valueString  = TypBiletu.SelectedValue.ToString();
+                decimal cena = Convert.ToDecimal(valueString);
                 decimal czasD = Convert.ToDecimal(czas);
-                DoZaplaty.Text = Convert.ToString(czasD * 15);
+                DoZaplaty.Text = Convert.ToString(czasD * cena);
             }
             
         }
@@ -61,12 +68,12 @@ namespace TorKartingowy
                 MessageBox.Show(messageBoxText, "Błąd");
                 return;
             }
-            if (kart == null)
-            {
-                messageBoxText += "Nie wybrano wolnego kartu!";
-                MessageBox.Show(messageBoxText, "Błąd");
-                return;
-            }
+            //if (kart == null)
+            //{
+            //    messageBoxText += "Nie wybrano wolnego kartu!";
+            //    MessageBox.Show(messageBoxText, "Błąd");
+            //    return;
+            //}
 
             if (NumerKartyKierowcy.Text != "")
             {
@@ -80,9 +87,29 @@ namespace TorKartingowy
             switch (result)
             {
                 case MessageBoxResult.Yes:
-                    
                     string messageBoxTextYes = "Wydano bilet";
+                    int idBilet = 0;
+                    if (NumerKartyKierowcy.Text != "")
+                    {
+                        dbIn.WydajBilet(TypBiletu.SelectedValue.ToString(), DoZaplaty.Text, NumerKartyKierowcy.Text);
+                        idBilet = dbIn.DajIdBiletu();
+                    }
+                    else
+                    {
+                        dbIn.WydajBilet(TypBiletu.SelectedValue.ToString(), DoZaplaty.Text);
+                        idBilet = dbIn.DajIdBiletu();
+                    }
                     string captionYes = "Komunikat";
+                    PdfDocument bilet = new PdfDocument();
+                    PdfPage strona = bilet.AddPage();
+                    XGraphics gfx = XGraphics.FromPdfPage(strona);
+                    XFont font = new XFont("Verdana", 16, XFontStyle.Bold);
+                    XTextFormatter tf = new XTextFormatter(gfx);
+                    XRect rect = new XRect(40, 100, 25, 220);
+                    gfx.DrawRectangle(XBrushes.SeaShell, rect);
+                    gfx.DrawString($"Id Biletu: {idBilet}\r\n Typ kartu: {TypKartu.Text} \r\nOpłacono: {DoZaplaty.Text}", font, XBrushes.Black, rect, XStringFormats.TopLeft);
+                    bilet.Save("bilet.pdf");
+                    Process.Start("bilet.pdf");
                     MessageBoxButton buttonYes = MessageBoxButton.OK;
                     MessageBoxImage iconYes = MessageBoxImage.Warning;
                     MessageBox.Show(messageBoxTextYes, captionYes, buttonYes, iconYes);
@@ -103,6 +130,19 @@ namespace TorKartingowy
         private void Kart_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             kart = e.AddedItems[0].ToString();
+        }
+
+        private void Button_SprawdzNkk(object sender, RoutedEventArgs e)
+        {
+            bool NKKcheck = dbIn.SprawdzNkk(NumerKartyKierowcy.Text);
+            if (NKKcheck == false)
+            {
+                NumerKartyKierowcy.Background = Brushes.Red;
+            }
+            else
+            {
+                NumerKartyKierowcy.Background = Brushes.Green;
+            }
         }
     }
 }

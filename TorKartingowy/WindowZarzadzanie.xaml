@@ -33,7 +33,7 @@
         <TextBlock TextWrapping="Wrap" Grid.Row="5" TextAlignment="Center"><Run Text="Cena za przejazd(U)"/><Run Text="[P]"/></TextBlock>
         <Button x:Name="PotwierdzZmiany" Content="Potwierdź zmiany" Margin="0" Click="button_PotwierdzZmiany" Grid.Row="8"/>
         <Button x:Name="buttonKasa_Copy" Content="Przywróć" Margin="0" Grid.Row="8" Grid.Column="1"/>
-        <TextBox Name ="CenaZaPrzejazdN" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="2" />
+        <TextBox Name ="CenaZaPrzejazdN" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="2" TextChanged="CenaZaPrzejazdN_TextChanged" />
         <TextBox Name ="CenaZaPrzejazdRK" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="7" Margin="0"/>
         <TextBox Name ="CenaZaPrzejazdUP" Margin="0" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="5"/>
         <TextBox Name ="CenaZaPrzejazdRH" Margin="0" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="6"/>

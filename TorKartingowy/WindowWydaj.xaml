@@ -23,6 +23,7 @@
         <Button HorizontalAlignment="Left" Height="50" Margin="0,168,0,0" VerticalAlignment="Top" Width="292" Click="Button_WydajBilet" Content="Wydaj"/>
         <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" Text="KASA" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center"/>
         <TextBlock HorizontalAlignment="Left" Height="17" Margin="125,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <Button Name="SprawdzNkk" Content="Sprawdź NKK" HorizontalAlignment="Left" Margin="125,62,0,0" VerticalAlignment="Top" Width="157" Height="16" Click="Button_SprawdzNkk" FontSize="10"/>
 
     </Grid>
 </Window>

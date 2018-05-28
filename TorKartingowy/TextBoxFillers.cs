@@ -15,7 +15,7 @@ namespace TorKartingowy
         SqlConnection con { get; set; }
         private void connectToDatabase()
         {
-            con = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            con = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             try
             {
                 con.Open();
@@ -28,7 +28,7 @@ namespace TorKartingowy
 
         public void FillTextBox(TextBox textBox, string table, string column, string condition)
         {
-            SqlConnection con1 = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             SqlCommand cmd = new SqlCommand($"SELECT * FROM {table} {condition}", con1);
             con1.Open();
             using (SqlDataReader read = cmd.ExecuteReader())
@@ -42,7 +42,7 @@ namespace TorKartingowy
 
         public void FillTextBlock(TextBlock textBlock, string table, string column, string condition)
         {
-            SqlConnection con1 = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             SqlCommand cmd = new SqlCommand($"SELECT * FROM {table} {condition}", con1);
             con1.Open();
             using (SqlDataReader read = cmd.ExecuteReader())
@@ -56,7 +56,7 @@ namespace TorKartingowy
 
         public void GetOnTrack (TextBlock textBlock)
         {
-            SqlConnection con1 = new SqlConnection("Data Source=L-412-PC03;Initial Catalog=MPTor;Integrated Security=True");
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             SqlCommand cmd = new SqlCommand($"SELECT COUNT(ID_Ride) AS count FROM Ride WHERE OnTrack = 1", con1);
             con1.Open();
             using (SqlDataReader read = cmd.ExecuteReader())
