@@ -19,8 +19,11 @@ namespace TorKartingowy
     /// </summary>
     public partial class WindowKasuj : Window
     {
+        TextBoxFillers filler = new TextBoxFillers();
+        DatabaseInput dbIn = new DatabaseInput();
 
-        string idBiletu;
+
+
         public WindowKasuj()
         {
             InitializeComponent();
@@ -46,6 +49,24 @@ namespace TorKartingowy
             MessageBoxButton button = MessageBoxButton.YesNo;
             MessageBoxImage icon = MessageBoxImage.Warning;
             MessageBoxResult result = MessageBox.Show(messageBoxText, caption, button, icon);
+        }
+
+        private void Zatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+            filler.FillTextBlock(CzasOplacony, "Ride", "PrePaid", $"WHERE ID_Ride = {IDBilet.Text}");
+            string timeStringInMinutes = dbIn.WypelnijPrzejazd(IDBilet.Text);
+            decimal godziny = Convert.ToDecimal(timeStringInMinutes) / 60;
+            string cenaZaGodzineString = dbIn.GetValue("Ride", "PricePH", $"WHERE ID_Ride = {IDBilet.Text}");
+            decimal cenaZaGodzine = Convert.ToDecimal(cenaZaGodzineString); 
+            string zaplaconoString = dbIn.GetValue("Ride", "PrePaid", $"WHERE ID_Ride = {IDBilet.Text}");
+            decimal zaplacono = Convert.ToDecimal(zaplaconoString);
+            decimal cena = godziny * cenaZaGodzine;
+            decimal doZaplaty = cena - zaplacono;
+            decimal czasOplaconyD = zaplacono / cenaZaGodzine;
+            CzasOplacony.Text = czasOplaconyD.ToString();
+            CzasPrzejechany.Text = godziny.ToString();
+            Roznica.Text = Convert.ToString(godziny - czasOplaconyD);
+            DoZaplaty.Text = doZaplaty.ToString();
         }
     }
 }

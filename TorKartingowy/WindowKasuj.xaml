@@ -9,7 +9,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" Text="KASA" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="ID Biletu"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name ="IDBilet" HorizontalAlignment="Left" Height="17" Margin="125,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name ="IDBilet" HorizontalAlignment="Left" Height="17" Margin="125,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" TextChanged="TextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" Text="KASA" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Text="Czas opłacony"/>
         <TextBlock Name="CzasOplacony" HorizontalAlignment="Left" Height="17" Margin="125,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"><Run Text=""/><LineBreak/><Run/></TextBlock>
@@ -20,6 +20,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="0,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Do dopłaty"/><LineBreak/><Run/></TextBlock>
         <TextBlock Name="DoZaplaty" HorizontalAlignment="Left" Height="17" Margin="125,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"><Run Text=""/><LineBreak/><Run/></TextBlock>
         <Button HorizontalAlignment="Left" Height="50" Margin="0,135,0,0" VerticalAlignment="Top" Width="292" Click="Button_WydajBilet" Content="Skasuj"/>
+        <Button Name="Zatwierdz" Content="Zatwierdź&#xD;&#xA;" HorizontalAlignment="Left" Margin="226,45,0,0" VerticalAlignment="Top" Width="66" Height="18" Click="Zatwierdz_Click"/>
 
     </Grid>
 </Window>

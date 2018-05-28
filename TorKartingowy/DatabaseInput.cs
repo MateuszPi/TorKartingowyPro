@@ -46,6 +46,10 @@ namespace TorKartingowy
             SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
             PricePH = PricePH.Replace(",", ".");
             PrePaid = PrePaid.Replace(",", ".");
+            if (PrePaid == "")
+            {
+                PrePaid = "0";
+            }
 
             SqlCommand cmd = new SqlCommand($"INSERT INTO [dbo].[Ride] ([PricePH], [PrePaid], [ID_Customer], [OnTrack], [StartingTime])" +
                                             $"VALUES({PricePH}, {PrePaid}, {IdCustomer}, 1, GETDATE());", con1);
@@ -67,6 +71,51 @@ namespace TorKartingowy
             }
             return Convert.ToInt32(ret);
         }
+
+        public string WypelnijPrzejazd(string IdRide)
+        {
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
+            SqlDataReader dR;
+            string ret = "";
+            SqlCommand cmd = new SqlCommand($"UPDATE Ride SET EndingTime = GETDATE() WHERE ID_Ride = {IdRide}", con1);
+            SqlCommand cmd2 = new SqlCommand($"SELECT DATEPART(mi,EndingTime - StartingTime) AS Time FROM Ride WHERE ID_Ride = {IdRide}", con1);
+            con1.Open();
+            cmd.ExecuteNonQuery();
+            dR = cmd2.ExecuteReader();
+            while (dR.Read())
+            {
+                ret = (dR[$"Time"].ToString());
+            }
+            return ret;
+        }
+
+        public void Skasujbilet(string IdRide, string TotalPrice)
+        {
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
+            string ret = "";
+            SqlCommand cmd = new SqlCommand($"UPDATE Ride SET OnTrack = 0, TotalPrice = {TotalPrice} WHERE ID_Ride = {IdRide}", con1);
+            con1.Open();
+            cmd.ExecuteNonQuery();
+        }
+
+        public string GetValue( string table, string column, string condition)
+        {
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand($"SELECT * FROM {table} {condition}", con1);
+            string ret = "";
+            con1.Open();
+            using (SqlDataReader read = cmd.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    ret = (read[$"{column}"].ToString());
+                }
+            }
+            return ret;
+        }
+
+
+
 
         public bool SprawdzNkk (string NKK)
         {
