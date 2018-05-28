@@ -1,47 +1,94 @@
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\bin\Debug\TorKartingowy.exe.config
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\bin\Debug\TorKartingowy.exe
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\bin\Debug\TorKartingowy.pdb
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.csprojResolveAssemblyReference.cache
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\MainWindow.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowKasa.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowKasuj.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowWydaj.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\App.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy_MarkupCompile.cache
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy_MarkupCompile.lref
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\MainWindow.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowKasa.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowKasuj.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowWydaj.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.g.resources
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.Properties.Resources.resources
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.csproj.GenerateResource.Cache
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.csproj.CoreCompileInputs.cache
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.exe
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\TorKartingowy.pdb
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowRezerwacja.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowRezerwacja.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowZarzadzanie.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowZarzadzanie.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowTerminarz.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowTerminarz.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaMain.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowLigi.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaMain.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowLigi.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PagePunktacja.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PagePunktacja.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowBaza.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowBaza.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowKierowca.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowSzczegóły.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowKierowca.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowSzczegóły.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageRekordy.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowArchiwum.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageRekordy.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\WindowArchiwum.baml
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageArchiwum.g.cs
-G:\P4\TorKartingowyPro\TorKartingowyPro\TorKartingowy\obj\Debug\PageArchiwum.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\bin\Debug\TorKartingowy.exe.config
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\bin\Debug\TorKartingowy.exe
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\bin\Debug\TorKartingowy.pdb
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.csprojResolveAssemblyReference.cache
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\MainWindow.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageArchiwum.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageKlasyfikacjaMain.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PagePunktacja.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageRekordy.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowArchiwum.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowBaza.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKasa.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKasuj.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKierowca.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowLigi.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowRezerwacja.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowSzczegóły.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowTerminarz.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowWydaj.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowZarzadzanie.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\App.g.cs
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy_MarkupCompile.cache
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy_MarkupCompile.lref
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\MainWindow.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageArchiwum.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageKlasyfikacjaMain.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PagePunktacja.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageRekordy.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowArchiwum.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowBaza.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKasa.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKasuj.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKierowca.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowLigi.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowRezerwacja.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowSzczegóły.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowTerminarz.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowWydaj.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowZarzadzanie.baml
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.g.resources
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.Properties.Resources.resources
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.csproj.GenerateResource.Cache
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.csproj.CoreCompileInputs.cache
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.exe
+C:\Users\student\Downloads\Pierlak_0419\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.pdb
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\bin\Debug\TorKartingowy.exe.config
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\bin\Debug\TorKartingowy.exe
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\bin\Debug\TorKartingowy.pdb
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.csprojAssemblyReference.cache
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\MainWindow.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageArchiwum.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageKlasyfikacjaMain.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PagePunktacja.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageRekordy.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowArchiwum.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowBaza.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKasa.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKasuj.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKierowca.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowLigi.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowRezerwacja.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowSzczegóły.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowTerminarz.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowWydaj.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowZarzadzanie.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\App.g.cs
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy_MarkupCompile.cache
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy_MarkupCompile.lref
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\MainWindow.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageArchiwum.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageKlasyfikacjaMain.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageKlasyfikacjaSzczegolowa.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PagePunktacja.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\PageRekordy.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowArchiwum.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowBaza.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKasa.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKasuj.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowKierowca.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowLigi.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowRezerwacja.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowSzczegóły.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowTerminarz.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowWydaj.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\WindowZarzadzanie.baml
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.g.resources
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.Properties.Resources.resources
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.csproj.GenerateResource.cache
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.csproj.CoreCompileInputs.cache
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.exe
+C:\Users\Mateusz\Downloads\Pierlak_0517 (1)\TorKartingowyPro-master\TorKartingowy\obj\Debug\TorKartingowy.pdb

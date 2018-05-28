@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ComboFiller.cs" />
+    <Compile Include="DatabaseInput.cs" />
     <Compile Include="PageArchiwum.xaml.cs">
       <DependentUpon>PageArchiwum.xaml</DependentUpon>
     </Compile>
@@ -70,6 +72,7 @@
     <Compile Include="PageRekordy.xaml.cs">
       <DependentUpon>PageRekordy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TextBoxFillers.cs" />
     <Compile Include="WindowArchiwum.xaml.cs">
       <DependentUpon>WindowArchiwum.xaml</DependentUpon>
     </Compile>
@@ -198,6 +201,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="MPTorDataSet.xsc">
+      <DependentUpon>MPTorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MPTorDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MPTorDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MPTorDataSet.xss">
+      <DependentUpon>MPTorDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

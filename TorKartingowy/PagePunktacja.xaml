@@ -9,9 +9,12 @@
       Title="PagePunktacja">
 
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="391">
-            <TextBlock Height="72" TextWrapping="Wrap" Text="PLACEHOLDER: PUNKTACJA" Width="250"/>
-        </ListBox>
-
+        <ListView>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

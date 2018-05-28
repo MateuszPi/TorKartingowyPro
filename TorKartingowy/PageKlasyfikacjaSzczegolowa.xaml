@@ -9,7 +9,7 @@
       Title="PageKlasyfikacjaSzczegolowa">
 
     <Grid>
-        <DataGrid Name ="DataGrid1" HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="391" SelectionChanged="DataGrid_SelectionChanged"/>
+        <DataGrid Name ="DataGrid1" SelectionChanged="DataGrid_SelectionChanged" IsEnabled="False"/>
         <TextBlock HorizontalAlignment="Left" Height="73" Margin="28,40,0,0" TextWrapping="Wrap" Text="PLACEHOLDER: KLASYFIKACJA SZCZEGOLOWA" VerticalAlignment="Top" Width="292"/>
 
     </Grid>

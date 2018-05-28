@@ -5,24 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TorKartingowy"
         mc:Ignorable="d"
-        Title="WindowRezerwacja" Height="232" Width="300">
+        Title="WindowRezerwacja" Height="231.017" Width="300">
     <Grid Height="200" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="87*"/>
             <RowDefinition Height="13*"/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" Text="KASA" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="146" TextAlignment="Center" LineHeight="9" Text="Data Rezerwacji"/>
-        <DatePicker Name="DataRezerwacji" Margin="146,45,0,0" Height="41" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="146" TextAlignment="Center" LineHeight="9"><Run Text="Godzina rezerwacji"/></TextBlock>
-        <TextBox x:Name ="Godziny" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextChanged="TextBox_TextChanged" Margin="146,82,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="146" TextAlignment="Center" LineHeight="9"><Run Text="Na klienta:"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name ="NumerKartyKierowcy" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextChanged="TextBox_TextChanged" Margin="146,99,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="146" TextAlignment="Center" LineHeight="9" Text="Typ Kartów"/>
-        <TextBox x:Name ="LiczbaKartow" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextChanged="TextBox_TextChanged" Margin="146,133,0,0"/>
-        <ComboBox x:Name ="TypKartow" HorizontalAlignment="Left" Height="17" Margin="146,116,0,0" VerticalAlignment="Top" Width="146"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="146" TextAlignment="Center" LineHeight="9" Text="Liczba kartów"/>
-        <Button Name="ButtonRezerwuj" HorizontalAlignment="Left" Height="50" Margin="0,150,0,0" VerticalAlignment="Top" Width="292" Click="Button_Rezerwuj" Content="Rezerwuj" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" Text="KASA" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center" Grid.ColumnSpan="3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="146" TextAlignment="Center" LineHeight="9" Text="Data Rezerwacji" Grid.ColumnSpan="2"/>
+        <DatePicker Name="DataRezerwacji" Margin="1,45,0,0" Height="37" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="146" TextAlignment="Center" LineHeight="9" Grid.ColumnSpan="2"><Run Text="Godzina rezerwacji"/></TextBlock>
+        <TextBox x:Name ="GodzinaOd" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" TextChanged="TextBox_TextChanged" Margin="1,82,0,0" Grid.Column="1" PreviewTextInput="GodzinaOd_PreviewTextInput"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="146" TextAlignment="Center" LineHeight="9" Grid.ColumnSpan="2"><Run Text="Na klienta:"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name ="NumerKartyKierowcy" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextChanged="TextBox_TextChanged" Margin="1,99,0,0" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="146" TextAlignment="Center" LineHeight="9" Text="Typ Kartów" Grid.ColumnSpan="2"/>
+        <TextBox x:Name ="LiczbaKartow" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextChanged="TextBox_TextChanged" Margin="1,133,0,0" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ComboBox x:Name ="TypKartow" HorizontalAlignment="Left" Height="17" Margin="1,116,0,0" VerticalAlignment="Top" Width="146" Grid.ColumnSpan="2" Grid.Column="1" SelectionChanged="TypKartow_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="146" TextAlignment="Center" LineHeight="9" Text="Liczba kartów" Grid.ColumnSpan="2"/>
+        <Button Name="ButtonRezerwuj" HorizontalAlignment="Left" Height="50" Margin="0,150,0,0" VerticalAlignment="Top" Width="292" Click="Button_Rezerwuj" Content="Rezerwuj" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <TextBox x:Name ="GodzinaDo" HorizontalAlignment="Left" Height="17" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" TextChanged="TextBox_TextChanged" Margin="0,82,0,0" Grid.Column="2"/>
+        <Canvas Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="13,-72,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

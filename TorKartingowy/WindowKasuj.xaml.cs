@@ -19,6 +19,8 @@ namespace TorKartingowy
     /// </summary>
     public partial class WindowKasuj : Window
     {
+
+        string idBiletu;
         public WindowKasuj()
         {
             InitializeComponent();
@@ -26,12 +28,20 @@ namespace TorKartingowy
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void Button_WydajBilet(object sender, RoutedEventArgs e)
         {
-            string messageBoxText = $"Skasowano bilet {IDBilet.Text}";
+            string messageBoxText = "";
+            if (IDBilet.Text == "")
+            {
+                messageBoxText += "Brak ID biletu!";
+                MessageBox.Show(messageBoxText, "Błąd");
+                return;
+            }
+
+
+            messageBoxText += $"Skasować bilet {IDBilet.Text}?";
             string caption = "Wydawanie biletu";
             MessageBoxButton button = MessageBoxButton.YesNo;
             MessageBoxImage icon = MessageBoxImage.Warning;

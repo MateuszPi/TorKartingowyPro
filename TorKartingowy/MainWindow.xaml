@@ -5,25 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TorKartingowy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="534" Width="500">
-    <Grid Margin="0,0,0,111">
+        Title="MainWindow" Height="546" Width="500" MinWidth="500" MinHeight="546">
+    <Grid Margin="0,0,0,-4">
         <Grid.RowDefinitions>
-            <RowDefinition Height="358*"/>
-            <RowDefinition Height="201*"/>
+            <RowDefinition Height="130*"/>
+            <RowDefinition Height="130*"/>
+            <RowDefinition Height="130*"/>
+            <RowDefinition Height="129*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="buttonZarzadzanie" Content="Zarządzanie&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246" Height="125" Click="button_Zarzadzanie"/>
-        <Button x:Name="buttonTerminarz" Content="Terminarz&#xD;&#xA;" Margin="246,0,0,0" VerticalAlignment="Top" Height="125" Click="button_Terminarz" Width="246"/>
-        <Button x:Name="buttonKasa" Content="KASA&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,125,0,0" VerticalAlignment="Top" Width="246" Height="125" Click="button_Kasa"/>
-        <Button x:Name="buttonLigi" Content="LIGI" HorizontalAlignment="Left" Margin="246,125,0,0" VerticalAlignment="Top" Width="246" Height="125" Click="button1_Ligi"/>
-        <Button x:Name="buttonBaza" Content="BAZA KLIENTÓW" HorizontalAlignment="Left" Margin="0,250,0,0" VerticalAlignment="Top" Width="246" Height="125" Click="button_Baza" Grid.RowSpan="2"/>
-        <Button x:Name="buttonArchiwum" Content="REKORDY I ARCHIWUM&#xD;&#xA;" HorizontalAlignment="Left" Margin="246,250,0,0" VerticalAlignment="Top" Width="246" Height="125" Click="button_Archiwum" Grid.RowSpan="2"/>
-        <TextBlock x:Name="textLayout" HorizontalAlignment="Left" Margin="0,163,0,-61" TextWrapping="Wrap" Text="Dzisiejszy layout:" VerticalAlignment="Top" Height="39" Width="246" FontSize="24" Grid.Row="1"/>
-        <TextBlock x:Name="blockLayout" HorizontalAlignment="Left" Height="39" Margin="246,163,0,-61" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="246" FontSize="24" Grid.Row="1"/>
-        <TextBlock x:Name="textNaTorze" HorizontalAlignment="Left" Margin="0,124,0,-22" TextWrapping="Wrap" Text="Na torze:" VerticalAlignment="Top" Height="39" Width="246" FontSize="24" Grid.Row="1"/>
-        <TextBlock x:Name="blockNaTorze" HorizontalAlignment="Left" Height="39" Margin="246,124,0,-22" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="246" FontSize="24" Grid.Row="1"/>
+        <Button x:Name="buttonZarzadzanie" Content="Zarządzanie&#xD;&#xA;" Click="button_Zarzadzanie" Margin="0"/>
+        <Button x:Name="buttonTerminarz" Content="Terminarz&#xD;&#xA;" Click="button_Terminarz" Margin="0" Grid.Column="1"/>
+        <Button x:Name="buttonKasa" Content="KASA&#xD;&#xA;" Click="button_Kasa" Grid.Row="1" Margin="0"/>
+        <Button x:Name="buttonLigi" Content="LIGI" Margin="0" Click="button1_Ligi" Grid.Row="1" Grid.Column="1" Panel.ZIndex="-2"/>
+        <Button x:Name="buttonBaza" Content="BAZA KLIENTÓW" Click="button_Baza" Grid.Row="2"/>
+        <Button x:Name="buttonArchiwum" Content="REKORDY I ARCHIWUM&#xD;&#xA;" Click="button_Archiwum" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock x:Name="textLayout" HorizontalAlignment="Left" Margin="5,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="246" FontSize="24" Grid.Row="3" Grid.ColumnSpan="2"><Run Text="Dzisiejszy layout:"/></TextBlock>
+        <TextBlock x:Name="blockLayout" HorizontalAlignment="Left" Height="39" Margin="0,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" FontSize="24" Grid.Row="3" Grid.Column="1"/>
+        <TextBlock x:Name="textNaTorze" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="Na torze:" VerticalAlignment="Top" Height="39" Width="246" FontSize="24" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="blockNaTorze" HorizontalAlignment="Left" Height="39" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" FontSize="24" Grid.Row="3" Grid.Column="1" Margin="0,20,0,0"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="21" Margin="10,103,0,0" Grid.Row="3" VerticalAlignment="Top" Width="90" Click="Button_Click"/>
 
     </Grid>
 </Window>

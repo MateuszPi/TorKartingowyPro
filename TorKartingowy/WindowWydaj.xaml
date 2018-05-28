@@ -12,17 +12,17 @@
             </InlineUIContainer></TextBlock>
         <TextBox Name ="NumerKartyKierowcy" HorizontalAlignment="Left" Height="17" Margin="125,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" TextChanged="TextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Typ biletu"/><LineBreak/><Run/></TextBlock>
-        <ComboBox Name ="TypBiletu" HorizontalAlignment="Left" Height="17" Margin="125,78,0,0" VerticalAlignment="Top" Width="157"/>
+        <ComboBox Name ="TypBiletu" HorizontalAlignment="Left" Height="17" Margin="125,78,0,0" VerticalAlignment="Top" Width="157" SelectionChanged="TypBiletu_SelectionChanged"></ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Typ kartu"/><LineBreak/><Run/></TextBlock>
-        <ComboBox Name ="TypKartu" HorizontalAlignment="Left" Height="17" Margin="125,95,0,0" VerticalAlignment="Top" Width="157"/>
+        <ComboBox Name ="TypKartu" HorizontalAlignment="Left" Height="17" Margin="125,95,0,0" VerticalAlignment="Top" Width="157" SelectionChanged="TypKartu_SelectionChanged"></ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="0,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Kart"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
-        <ComboBox Name ="Kart" HorizontalAlignment="Left" Height="17" Margin="125,112,0,0" VerticalAlignment="Top" Width="157"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Opłacony czas"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
-        <TextBox Name ="Czas" HorizontalAlignment="Left" Height="17" Margin="125,129,0,0" TextWrapping="Wrap" Text="&#xA;0000" VerticalAlignment="Top" Width="157" TextChanged="TextBox_TextChanged"/>
+        <TextBox Name ="Czas" HorizontalAlignment="Left" Height="17" Margin="125,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157" TextChanged="TextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="Do zapłaty"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
         <TextBlock Name ="DoZaplaty" HorizontalAlignment="Left" Margin="125,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17"><Run Text="00.00"/><LineBreak/><Run Text=""/><LineBreak/><Run/></TextBlock>
         <Button HorizontalAlignment="Left" Height="50" Margin="0,168,0,0" VerticalAlignment="Top" Width="292" Click="Button_WydajBilet" Content="Wydaj"/>
         <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" Text="KASA" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="125,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
 
     </Grid>
 </Window>

@@ -7,14 +7,25 @@
         mc:Ignorable="d"
         Title="WindowLigi" Height="397" Width="400">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="51" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" FontSize="36" TextAlignment="Center" Text="Ligi"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="168" FontSize="24" Text="Klasa"/>
-        <ComboBox x:Name ="TypKartu" HorizontalAlignment="Left" Height="31" Margin="190,56,0,0" VerticalAlignment="Top" Width="202"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="168" FontSize="24"><Run Text="Sezon"/><LineBreak/><Run/></TextBlock>
-        <ComboBox x:Name ="TypKartu_Copy" HorizontalAlignment="Left" Height="31" Margin="190,87,0,0" VerticalAlignment="Top" Width="202"/>
-        <Button Name="Klasyfikacja" Content="Klasyfikacja" HorizontalAlignment="Left" Height="45" Margin="0,118,0,0" VerticalAlignment="Top" Width="190" Click="Button_KlasyfikacjaMain"/>
-        <Button Name="Terminarz" Content="Terminarz" HorizontalAlignment="Left" Height="45" Margin="190,118,0,0" VerticalAlignment="Top" Width="202" Click="Button_Terminarz"/>
-        <Frame Name="FrameLiga" HorizontalAlignment="Left" Height="203" Margin="1,163,0,0" VerticalAlignment="Top" Width="391" NavigationUIVisibility="Hidden" Navigated="FrameLiga_Navigated"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="196*"/>
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap" FontSize="36" TextAlignment="Center" Text="Ligi" Margin="0" Grid.ColumnSpan="2"/>
+        <TextBlock TextWrapping="Wrap" FontSize="24" Text="Klasa" Grid.Row="1"/>
+        <ComboBox x:Name ="TypKartu" Grid.Row="1" Grid.Column="1"/>
+        <TextBlock TextWrapping="Wrap" FontSize="24" Grid.Row="2" Margin="0"><Run Text="Sezon"/><LineBreak/><Run/></TextBlock>
+        <ComboBox x:Name ="TypKartu_Copy" Grid.Row="2" Grid.Column="1"/>
+        <Button Name="Klasyfikacja" Content="Klasyfikacja" Click="Button_KlasyfikacjaMain" Grid.Row="3" Padding="1,0,0,0"/>
+        <Button Name="Terminarz" Content="Terminarz" Click="Button_Terminarz" Grid.Row="3" Grid.Column="1"/>
+        <Frame Name="FrameLiga" NavigationUIVisibility="Hidden" Navigated="FrameLiga_Navigated" Grid.Row="4" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

@@ -5,25 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TorKartingowy"
         mc:Ignorable="d"
-        Title="WindowZarzadzanie" Height="274.074" Width="300">
+        Title="WindowZarzadzanie" Height="274.074" Width="300" MinWidth="300" MinHeight="274" FontStretch="UltraExpanded">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center"><Run Text="ZARZĄDZANIE"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Dzisiejszy layout"/><LineBreak/><Run/></TextBlock>
-        <ComboBox HorizontalAlignment="Left" Margin="142,50,0,0" VerticalAlignment="Top" Width="150" Height="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142" Text="Cena za przejazd(N)"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142" Text="Cena za przejazd(U)"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Cena Rezerwacji/h"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="0,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Cena Rezerwacji/k"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Cena za przejazd(N)"/><Run Text="[P]"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="0,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="142"><Run Text="Cena za przejazd(U)"/><Run Text="[P]"/></TextBlock>
-        <Button x:Name="buttonKasa" Content="Potwierdź zmiany" HorizontalAlignment="Left" Margin="0,190,0,0" VerticalAlignment="Top" Width="142" Height="53" Click="button_Kasa"/>
-        <Button x:Name="buttonKasa_Copy" Content="Przywróć" HorizontalAlignment="Left" Margin="142,190,0,0" VerticalAlignment="Top" Width="150" Height="53" Click="button_Kasa"/>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="142,69,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="142,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="142,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="142,131,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="142,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="142,85,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="56*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="147*"/>
+            <ColumnDefinition Width="145*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" FontSize="36" TextAlignment="Center" Grid.ColumnSpan="2"><Run Text="ZARZĄDZANIE"/><LineBreak/><Run/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Grid.Row="1" TextAlignment="Center" TextDecorations="{x:Null}"><Run Text="Dzisiejszy layout"/><LineBreak/></TextBlock>
+        <ComboBox Grid.Column="1" Grid.Row="1"/>
+        <TextBlock TextWrapping="Wrap" Text="Cena za przejazd(N)" Grid.Row="2" TextAlignment="Center"/>
+        <TextBlock Margin="0" TextWrapping="Wrap" Height="20" Width="147" Text="Cena za przejazd(U)" Grid.Row="3" TextAlignment="Center"/>
+        <TextBlock TextWrapping="Wrap" Grid.Row="6" Margin="0" TextAlignment="Center"><Run Text="Cena Rezerwacji/h"/><LineBreak/><Run/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Height="20" Width="147" Grid.Row="7" TextAlignment="Center"><Run Text="Cena Rezerwacji/k"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock Margin="0" TextWrapping="Wrap" Grid.Row="4" Grid.RowSpan="2" TextAlignment="Center"><Run Text="Cena za przejazd(N)"/><Run Text="[P]"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Grid.Row="5" TextAlignment="Center"><Run Text="Cena za przejazd(U)"/><Run Text="[P]"/></TextBlock>
+        <Button x:Name="PotwierdzZmiany" Content="Potwierdź zmiany" Margin="0" Click="button_PotwierdzZmiany" Grid.Row="8"/>
+        <Button x:Name="buttonKasa_Copy" Content="Przywróć" Margin="0" Grid.Row="8" Grid.Column="1"/>
+        <TextBox Name ="CenaZaPrzejazdN" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="2" />
+        <TextBox Name ="CenaZaPrzejazdRK" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="7" Margin="0"/>
+        <TextBox Name ="CenaZaPrzejazdUP" Margin="0" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="5"/>
+        <TextBox Name ="CenaZaPrzejazdRH" Margin="0" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="6"/>
+        <TextBox Name ="CenaZaPrzejazdNP" Margin="0" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="4"/>
+        <TextBox Name ="CenaZaPrzejazdU" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.Row="3"/>
 
     </Grid>
 </Window>

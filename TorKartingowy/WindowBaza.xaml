@@ -7,10 +7,26 @@
         mc:Ignorable="d"
         Title="WindowBaza" Height="300" Width="300">
     <Grid>
-        <Button Name="ButtonDodajKierowce" Content="Dodaj Kierowcę" HorizontalAlignment="Left" VerticalAlignment="Top" Width="292" Height="42" Click="Button_DodajKierowce"/>
-        <Button Name="ButtonEdytujKierowce" Content="Edytuj kierowcę" HorizontalAlignment="Left" Height="34" Margin="0,42,0,0" VerticalAlignment="Top" Width="102" Click="Button_EdytujKierowce"/>
-        <Button Name="ButtonSzczegoly" Content="Szczegóły" HorizontalAlignment="Left" Height="34" Margin="102,42,0,0" VerticalAlignment="Top" Width="94" Click="Button_Szczegoly"/>
-        <DataGrid Name="GridKierowcy" HorizontalAlignment="Left" Height="193" Margin="0,76,0,0" VerticalAlignment="Top" Width="292"/>
-        <Button x:Name="ButtonDodajUsunKierowce_Copy" Content="Usuń kierowcę" HorizontalAlignment="Left" Height="34" Margin="196,42,0,0" VerticalAlignment="Top" Width="96" Click="Button_UsunKierowce"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="98*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="186*"/>
+        </Grid.RowDefinitions>
+        <Button Name="ButtonDodajKierowce" Content="Dodaj Kierowcę" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Button_DodajKierowce" Margin="0" Grid.ColumnSpan="3"/>
+        <Button Name="ButtonEdytujKierowce" Content="Edytuj kierowcę" Click="Button_EdytujKierowce" Grid.Row="1"/>
+        <Button Name="ButtonSzczegoly" Content="Szczegóły" Click="Button_Szczegoly" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="ButtonDodajUsunKierowce_Copy" Content="Usuń kierowcę" Click="Button_UsunKierowce" Grid.Row="1" Grid.Column="2"/>
+        <ListView Grid.ColumnSpan="3" Grid.Row="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>
