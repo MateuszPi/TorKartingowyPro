@@ -21,12 +21,6 @@
         <Button Name="ButtonEdytujKierowce" Content="Edytuj kierowcę" Click="Button_EdytujKierowce" Grid.Row="1"/>
         <Button Name="ButtonSzczegoly" Content="Szczegóły" Click="Button_Szczegoly" Grid.Row="1" Grid.Column="1"/>
         <Button x:Name="ButtonDodajUsunKierowce_Copy" Content="Usuń kierowcę" Click="Button_UsunKierowce" Grid.Row="1" Grid.Column="2"/>
-        <ListView Grid.ColumnSpan="3" Grid.Row="2">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <ListBox Name="ListaKierowcow" Grid.Row="2" Grid.ColumnSpan="3" SelectionChanged="ListaKierowcow_SelectionChanged"/>
     </Grid>
 </Window>

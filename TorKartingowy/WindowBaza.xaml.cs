@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,14 +20,19 @@ namespace TorKartingowy
     /// </summary>
     public partial class WindowBaza : Window
     {
+        string id = "0";
+        DatabaseInput dbIn = new DatabaseInput();
+
         public WindowBaza()
         {
             InitializeComponent();
+            dbIn.DajListeKierowcow(ListaKierowcow);
         }
+
 
         private void Button_EdytujKierowce(object sender, RoutedEventArgs e)
         {
-            WindowKierowca window = new WindowKierowca();
+            WindowKierowca window = new WindowKierowca(true, id);
             window.Show();
         }
 
@@ -53,14 +59,26 @@ namespace TorKartingowy
 
         private void Button_DodajKierowce(object sender, RoutedEventArgs e)
         {
-            WindowKierowca window = new WindowKierowca();
+            WindowKierowca window = new WindowKierowca(true);
             window.Show();
         }
 
         private void Button_Szczegoly(object sender, RoutedEventArgs e)
         {
-            WindowSzczegóły window = new WindowSzczegóły();
+            WindowKierowca window = new WindowKierowca(false, id);
             window.Show();
+        }
+
+
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MessageBox.Show(e.AddedItems[0].ToString());
+        }
+
+        private void ListaKierowcow_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            id = e.AddedItems[0].ToString();
         }
     }
 }

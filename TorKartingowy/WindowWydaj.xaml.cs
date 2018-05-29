@@ -26,6 +26,7 @@ namespace TorKartingowy
     {
         ComboFiller filler = new ComboFiller();
         DatabaseInput dbIn = new DatabaseInput();
+        string NKK = "0";
         string typKartu;
         string typBiletu;
         string kart;
@@ -44,6 +45,7 @@ namespace TorKartingowy
             //liczenie do zapłaty
             if (Czas.Text != "")
             {
+
                 string czas = Czas.Text;
                 string valueString  = TypBiletu.SelectedValue.ToString();
                 decimal cena = Convert.ToDecimal(valueString);
@@ -77,7 +79,7 @@ namespace TorKartingowy
 
             if (NumerKartyKierowcy.Text != "")
             {
-                messageBoxText += $"Numer KartyKierowcy: {NumerKartyKierowcy}\r\n";
+                messageBoxText += $"Numer KartyKierowcy: {NumerKartyKierowcy.Text}\r\n";
             }
             messageBoxText += $"Typ biletu: {TypBiletu.Text}\r\nTyp Kartu {TypKartu.Text}\r\nOpłacony czas: {Czas.Text}\r\nCzy Wydać bilet";
             string caption = "Wydawanie biletu";

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace TorKartingowy
 {
@@ -40,6 +42,64 @@ namespace TorKartingowy
             cmd.ExecuteNonQuery();
 
         }
+
+
+        public void DodajKierowce(string Imie, string Nazwisko, string DataUrodzenia, bool AktywnyWLidze, bool aktywnyProfil)
+        {
+            string liga = "0";
+            if (AktywnyWLidze == true)
+            {
+                liga = "1";
+            }
+            string profil = "0";
+            if (aktywnyProfil == true)
+            {
+                profil = "1";
+            }
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand($"set dateformat dmy " +
+                                            $"INSERT INTO [dbo].[Customer] ([FirstName], [LastName], [Birthday], [ActiveInLeague], [ActiveCustomerCard])" +
+                                            $"VALUES('{Imie}', '{Nazwisko}', '{DataUrodzenia}', {liga}, {profil});", con1);
+            con1.Open();
+            cmd.ExecuteNonQuery();
+        }
+
+        public void EdytujKierowce(string Imie, string Nazwisko, string DataUrodzenia, bool AktywnyWLidze, bool aktywnyProfil, string IdKierowcy)
+        {
+            string liga = "0";
+            if (AktywnyWLidze == true)
+            {
+                liga = "1";
+            }
+            string profil = "0";
+            if (aktywnyProfil == true)
+            {
+                profil = "1";
+            }
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand($"set dateformat dmy " +
+                                            $"UPDATE [dbo].[Customer]" +
+                                            $"SET FirstName = '{Imie}', LastName = '{Nazwisko}', Birthday = '{DataUrodzenia}', ActiveInLeague = {liga}, ActiveCustomerCard = {profil} WHERE ID_Customer = {IdKierowcy}", con1);
+            con1.Open();
+            cmd.ExecuteNonQuery();
+        }
+
+        public void DajListeKierowcow(ListBox lista)
+        {
+            SqlConnection con1 = new SqlConnection("Data Source=MP-PC1;Initial Catalog=MPTor;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("SELECT ID_Customer, FirstName, LastName FROM Customer", con1);
+            SqlDataAdapter dA = new SqlDataAdapter("SELECT ID_Customer, FirstName, LastName FROM Customer", con1);
+            con1.Open();
+            SqlDataReader dR = cmd.ExecuteReader();
+            lista.Items.Clear();
+
+            while (dR.Read())
+            {
+                lista.Items.Add(dR["ID_Customer"]);
+            }
+            con1.Close();
+        }
+
 
         public void WydajBilet (string PricePH, string PrePaid, string IdCustomer = "0", string IdKart = "0")
         {
